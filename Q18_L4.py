@@ -5,7 +5,13 @@
 # N x N = N2
 
 def tabuada(N):
-    if N:
-        pass
+    if type(N) != int or N < 1:
+        return Exception
+    L = []
+    for num in range(1, N+1):
+        L.append((N, num, N*num))
+    return L
+
+print(tabuada(0))
 
 print("Todos os testes ok.")

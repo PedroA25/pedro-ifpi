@@ -8,6 +8,19 @@
 # o Triângulo Escaleno: os comprimentos dos 3 lados são diferentes.
 
 def triangulo(X, Y, Z):
-    return 
+    if type(X) != int and type(X) != float:
+        return Exception
+    if type(Y) != int and type(Y) != float:
+        return Exception
+    if type(Z) != int and type(Z) != float:
+        return Exception
+    if X + Y <= Z or X + Z <=Y or Y + Z <= X:
+        return Exception
+    if X == Y == Z:
+        return "Triângulo Equilátero"
+    elif X == Y or X == Z or Y == Z:
+        return "Triângulo Isósceles"
+    elif X != Y != Z:
+        return "Triângulo Escaleno"
 
 print("Todos os testes ok.")
