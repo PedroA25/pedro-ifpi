@@ -1,3 +1,11 @@
+#INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO PIAUÍ
+#CAMPUS TERESINA CENTRAL
+#TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS
+#PROF.: OSIRES PIRES COELHO FILHO
+#ALUNO: PEDRO AUGUSTO RODRIGUES MELO
+#DISCIPLINA: DESENVOLVIMENTO ORIENTADO A TESTES
+#DATA: 19/12/2024
+
 # Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e retorna Xz.
 # (sem utilizar funções ou operadores de potência prontos)
 

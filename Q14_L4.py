@@ -1,3 +1,11 @@
+#INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO PIAUÍ
+#CAMPUS TERESINA CENTRAL
+#TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS
+#PROF.: OSIRES PIRES COELHO FILHO
+#ALUNO: PEDRO AUGUSTO RODRIGUES MELO
+#DISCIPLINA: DESENVOLVIMENTO ORIENTADO A TESTES
+#DATA: 19/12/2024
+
 # Escreva uma função que recebes 3 valores reais X, Y e Z e que verifique se esses valores podem ser os comprimentos dos lados de um 
 # triângulo e, neste caso, retornar qual o tipo de triângulo formado. Para que X, Y e Z formem um triângulo é necessário que
 # a seguinte propriedade seja satisfeita: o comprimento de cada lado de um triângulo é menor do que a soma do comprimento dos outros
