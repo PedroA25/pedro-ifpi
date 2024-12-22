@@ -10,6 +10,10 @@
 # S = 1 + 1⁄2 + 1/3 + 1⁄4 + 1/5 + 1/N.
 
 def equacao(x):
-    return 
+    if type(x) != int or x < 1:
+        return Exception
+    return sum(1/i for i in range(1, x+1))
 
+
+print(equacao(2))
 print("Todos os testes ok.")

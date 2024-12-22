@@ -9,6 +9,13 @@
 # Faça uma função que leia um número não determinado de valores positivos e retorna a média aritmética dos mesmos.
 
 def numero(X):
-    return 
+    if type(x) != int and type(x) != float:
+        return Exception
+    if x < 1:
+        return Exception 
+    quantidade = len(x)
+    media = sum(x)/quantidade
+    return media
+
 
 print("Todos os testes ok.")
