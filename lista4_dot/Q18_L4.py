@@ -17,9 +17,16 @@ def tabuada(N):
         return Exception
     L = []
     for num in range(1, N+1):
-        L.append((N, num, N*num))
+        L.append((num, N, N*num))
     return L
 
-print(tabuada(0))
+assert tabuada(2) == [(1, 2, 2), (2, 2, 4)]
+assert tabuada(3) == [(1, 3, 3,), (2, 3, 6), (3, 3, 9)]
+assert tabuada(4) == [(1, 4, 4), (2, 4, 8), (3, 4, 12), (4, 4, 16)]
+
+assert tabuada(-3) == Exception
+assert tabuada(True) == Exception
+assert tabuada("w") == Exception
+assert tabuada(2.4) == Exception
 
 print("Todos os testes ok.")

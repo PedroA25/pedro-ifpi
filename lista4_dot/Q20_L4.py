@@ -16,4 +16,13 @@ def somatorio(x):
         soma += i
     return soma
 
+assert somatorio(1) == 1
+assert somatorio(2) == 3
+assert somatorio(3) == 6 
+
+assert somatorio(-4) == Exception
+assert somatorio("w") == Exception
+assert somatorio(True) == Exception
+assert somatorio(2.3) == Exception
+
 print("Todos os testes ok")

@@ -13,7 +13,7 @@
 def peso_ideal(a, s):
     if type(a) != float and type(a) != int:
         return Exception
-    if a < 1:
+    if a < 1 or a >= 3:
         return Exception
     if s not in [1, 2]:
         return Exception
@@ -26,6 +26,12 @@ def peso_ideal(a, s):
     
 assert peso_ideal(1, 1) == 17.4
 assert peso_ideal(1, 2) == 14.7
+assert peso_ideal(1.7, 1) == 60.87
+assert peso_ideal(1.7, 2) == 65.59
 
+assert peso_ideal(23, 1) == Exception
+assert peso_ideal("m", 1) == Exception
+assert peso_ideal(True, 2) == Exception
+assert peso_ideal(2, 4) == Exception
 
 print("Todos os testes ok.")

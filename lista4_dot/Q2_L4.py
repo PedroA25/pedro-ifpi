@@ -15,11 +15,17 @@ def medias(x, y, z, m):
     if  type(y) != int and type(y) != float:
         return Exception
     if type(z) != int and type(z) != float:
-        return Exception 
+        return Exception
+    if x > 10 or x < 0:
+        return Exception
+    if y > 10 or y < 0:
+        return Exception
+    if z > 10 or z < 0:
+        return Exception     
     if m == 'A' or m == 'a':
         aritmetica = (x + y + z)/ 3
         return round(aritmetica, 2)
-    if m == 'P' or m == 'p':
+    elif m == 'P' or m == 'p':
         ponderada = ((x*5)+(y*3)+(z*2))/(5+3+2)
         return round(ponderada, 2)
     if m not in ['A', 'P', 'a', 'p']:
@@ -28,9 +34,9 @@ def medias(x, y, z, m):
 
 assert medias(2, 3, 4, "A") == 3.0
 assert medias(2, 3, 4, "P") == 2.7
-assert medias(30.5, 23, 5.5, "a") == 19.67
+assert medias(30.5, 23, 5.5, "a") == Exception
 assert medias(0, 0, 0, 'p') == 0.0
-assert medias(5, 6, -4, 'p') == 3.5
+assert medias(5, 6, -4, 'p') == Exception
 
 
 assert medias(2, 3, 4, "M") == Exception

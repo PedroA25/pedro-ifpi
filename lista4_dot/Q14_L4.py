@@ -31,4 +31,14 @@ def triangulo(X, Y, Z):
     elif X != Y != Z:
         return "Triângulo Escaleno"
 
+assert triangulo(3, 3, 3) == "Triângulo Equilátero"
+assert triangulo(3, 4, 5) == "Triângulo Escaleno"
+assert triangulo(3, 3, 5) == 'Triângulo Isósceles'
+assert triangulo(2.4, 2.4, 2.4) == "Triângulo Equilátero"
+
+assert triangulo(0, 0, 0) == Exception
+assert triangulo(1, 2, 3) == Exception
+assert triangulo(True, 2, 3) == Exception
+assert triangulo("w", "r", 2) == Exception
+
 print("Todos os testes ok.")

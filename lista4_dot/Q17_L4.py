@@ -13,7 +13,15 @@ from random import randint
 def maior_menor(x):
     if len(x) != 50:
         return Exception
+    if any(isinstance(i, (float, bool, str))for i in x):
+        return Exception
     return (max(x), min(x))
+  
 
 assert maior_menor([num for num in range(1, 51)]) == (50, 1)
+assert maior_menor([num for num in range(50, 100)]) == (99, 50)
 
+assert maior_menor([num for num in range(1, 2)]) == Exception
+assert maior_menor([num for num in range(-100, -50)]) == (-51, -100)
+
+print("Todos os testes ok.")

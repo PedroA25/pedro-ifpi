@@ -8,14 +8,23 @@
 
 # Faça uma função que leia um número não determinado de valores positivos e retorna a média aritmética dos mesmos.
 
-def numero(X):
-    if type(x) != int and type(x) != float:
+def numero(x):
+    if any(isinstance(i, (bool, str)) or i <= 0 for i in x):
         return Exception
-    if x < 1:
+    if len(x) < 1:
         return Exception 
     quantidade = len(x)
     media = sum(x)/quantidade
     return media
 
+assert numero([1, 2, 3, 4, 5]) == 3
+assert numero([10, 20, 30]) == 20
+assert numero([0, 0, 0]) == Exception
+assert numero([100]) == 100
+
+assert numero([-4, 5, 3]) == Exception
+assert numero([True, 2, 4]) == Exception
+assert numero([]) == Exception
+assert numero(["e", 4]) == Exception
 
 print("Todos os testes ok.")

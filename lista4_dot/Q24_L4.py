@@ -17,8 +17,16 @@ def potencia(X, Z):
     xz = 1
     for i in range(Z):
         xz *= X
-    return xz
+    return round(xz, 2)
 
-print(potencia(-2, 0))
+assert potencia(2, 0) == 1
+assert potencia(2, 1) == 2
+assert potencia(2, 3) == 8
+assert potencia(3, 2) == 9
+
+assert potencia(True, 2) == Exception
+assert potencia("30", 2) == Exception
+assert potencia(2.3, 3) == 12.17
+assert potencia(2, -2) == Exception 
 
 print("Todos os testes ok.")

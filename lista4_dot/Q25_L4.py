@@ -16,4 +16,14 @@ def fatorial(x):
         fat *= i
     return fat
 
+assert fatorial(0) == 1
+assert fatorial(4) == 24
+assert fatorial(5) == 120
+assert fatorial(2) == 2
+
+assert fatorial(-4) == Exception
+assert fatorial(True) == Exception
+assert fatorial(2.3) == Exception
+assert fatorial("r") == Exception
+
 print("Todos os testes ok.")

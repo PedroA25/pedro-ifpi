@@ -17,5 +17,11 @@ def ordenados(a, b):
         return (a, b)
 
 assert ordenados(3, 1) == (1, 3)
+assert ordenados(70, 7) == (7, 70)
+assert ordenados(1, 8) == (1, 8)
+
+assert ordenados(0, "w") == Exception
+assert ordenados(True, 1) == Exception
+assert ordenados(2.5, 4.5) == Exception
 
 print("Todos os testes ok.")
