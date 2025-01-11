@@ -38,6 +38,6 @@ assert media([]) == Exception
 assert media(["o", 2, 3, 4]) == Exception
 assert media([True, False, 2, 3, 4]) == Exception
 assert media([2.3, 2.3, 23, 4, 5, 6]) == Exception
-assert media([None])
+assert media([None]) == Exception
 
 print("Todos os testes ok.")
