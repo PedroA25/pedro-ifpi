@@ -12,10 +12,11 @@
 def repeticoes(n):
     if type(n) != list:
         return Exception
-    if any(isinstance(i, (float, bool, str)) for i in n):
-        return Exception
     if len(n) == 0:
         return Exception
+    for i in n:
+        if type(n) != int:
+            return Exception
     l = []
     for i in n:
         if i not in l:
